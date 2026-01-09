@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly-Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+
+    <div class="dischange" id="dischange"></div>
+
+    <div class="left-section">
+        <img src="images/logo.png" alt="" style="height: 60px;">
+        <h1 style="margin-top: 0; margin-bottom: 0; color: aliceblue;">Bookly<span style="color: #facc15;">.</span></h1>
+    </div>
+
+
+
+    <div class="right-section">
+        <h1>
+            Registration form
+        </h1>
+        <form action="#" method="GET">
+            <div style="display: flex; flex-direction: row; gap: 20px;">
+                <div id="loginItems">
+                    <label for="fname">First name</label>
+                    <input type="text" name="firstname" id="name" placeholder="First name">
+                </div>
+
+                <div id="loginItems">
+                    <label for="lname">Last name</label>
+                    <input type="text" name="lastname" id="name" placeholder="Last name">
+                </div>
+
+            </div>
+            
+
+
+            <div id="loginItems">
+                <label for="uname">Username</label>
+                <input type="text" name="username" id="name" placeholder="Username">
+            </div>
+
+            <div id="loginItems">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div id="loginItems">
+                <label for="pass">password</label>
+                <input type="password" name="password" id="pass" placeholder="Password">
+            </div>
+            
+            <input type="submit" value="login" id="loginButton">
+    </form>
+    </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
