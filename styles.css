@@ -43,7 +43,6 @@ body{
 .logo-container{
     height: 40px;
     padding: 0px;
-    background-color: var(--color-secondary);
     padding: 8px;
     border-radius: 10px;
 }
@@ -82,16 +81,30 @@ a:hover::after {
   transform: scaleX(1);
 }
 
+.header-button-container{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+}
+
 .signup-button{
     background-color: var(--color-primary);
     border-style: none;
     width: 140px;
-    height: 44px;
+    height: 40px;
     border-radius: 10px;
     color: var(--color-bg);
     font-weight: 500;
     font-size: 12px;
+    transition: 0.4s;
 }
+
+.signup-button:hover{
+    background-color: var(--color-secondary);
+    width: 160px;
+
+}
+
 
 .hero{
     height: 89vh;
@@ -159,12 +172,17 @@ input{
 
 .bottom-button{
     border: none;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     background-color: var(--color-primary);
     padding: 15px;
     width: 150px;
     color: var(--color-bg);
-        font-size: 12px;
+    font-size: 12px;
+    transition: 0.4s;
+}
 
+.bottom-button:hover{
+    width: 160px;
+    background-color: var(--color-secondary);
+    font-size: 13px;
 }
