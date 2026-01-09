@@ -1,0 +1,80 @@
+/* ================= LIBRARY PAGE ================= */
+
+.library-hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.library-hero h1 {
+    font-size: 42px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.library-hero p {
+    color: var(--color-text-muted);
+    font-size: 14px;
+}
+
+/* Library Section */
+.library-section {
+    padding: 40px 8vw;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+/* Book Card */
+.book-card {
+    background-color: var(--color-surface);
+    border-radius: 16px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 16px;
+    color: var(--color-text);
+    margin: 8px 0 2px;
+}
+
+.book-card p {
+    font-size: 13px;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+}
+
+.book-card button {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.book-card button:hover {
+    background-color: var(--color-secondary);
+}
+
+.book-card button:active {
+    background-color: var(--color-accent);
+}

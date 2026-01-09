@@ -29,6 +29,9 @@ starterAnimation();
 
 
 
+
+
+
 const signupButton = document.getElementById("signupButton");
 const change = document.getElementById("change")
 
@@ -36,6 +39,6 @@ signupButton.addEventListener("click",()=>{
     change.style.display="block";
     change.style.width = "100%";
     setTimeout(()=>{
-        
+        window.location.href = "login.html";
     },300)
 })
