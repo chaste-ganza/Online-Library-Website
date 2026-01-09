@@ -157,6 +157,9 @@ a:hover::after {
 
 }
 
+.signup-button:active{
+    background-color: var(--color-accent);
+}
 
 .hero{
     height: 89vh;
@@ -195,7 +198,7 @@ a:hover::after {
     margin-top: 10px;
     margin-bottom: 0;
     line-height: 42px;
-
+    color: #1c1b3a;
 }
 
 .bottom-p{
