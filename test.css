@@ -1,0 +1,61 @@
+:root {
+  /* Backgrounds */
+  --color-bg: #f7f6ff;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #1c1b3a;
+  --color-text-muted: #6b6a8a;
+
+  /* Brand / Actions */
+  --color-primary: #ff3b5c;   /* coral red (CTA) */
+  --color-secondary: #4d96ff; /* bright blue */
+  --color-accent: #facc15;    /* warm yellow */
+
+  /* Decorative */
+  --color-purple: #bf5af2;
+  --color-teal: #2dd4bf;
+  --color-green: #86efac;
+
+  --color-border: #e6e6f5;
+}
+
+
+body{
+    margin: 0;
+}
+
+.starter{
+    background-color: var(--color-text);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--color-surface);
+    font-size: 30px;
+    transition: 0.6s;
+
+}
+
+
+.starter-logo-hide{
+    background-color: var(--color-text);
+    height: 87px;
+    width: 0px; /*The maximum width is 100px*/
+    position: absolute;
+    transition: 0.4s;
+}
+
+.starter-text-container{
+    display: flex;
+}
+
+.starter-text-hide{
+    background-color: var(--color-text);
+    height: 70px;
+    width: 0px; /* the maximum width is 193px*/
+    position: absolute;
+    transition: 0.4s;
+}
