@@ -42,3 +42,15 @@ signupButton.addEventListener("click",()=>{
         window.location.href = "login.html";
     },300)
 })
+
+
+
+const dischange = document.getElementById("dischange")
+
+function dischangeAnimation(){
+    setTimeout(() => {
+        dischange.style.width = "0vw";
+    }, 1);
+}
+
+dischangeAnimation()
