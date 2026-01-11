@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bookly-About Me</title>
+    <link rel="stylesheet" href="about-me/about-me.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
+    <div class="change" id="change"></div>
     <div class="header">
         <div class="logo-container">
             <img src="images/logo.png" alt="Library logo" class="logo" style="height: 100%;">
         </div>
         <div class="link-container">
-            <a href="index.html">Home</a>
-            <a href="library.html">Library</a>
-            <a href="about-me.html">About me</a>
-            <a href="contact.html">contact</a>
+            <a id="index">Home</a>
+            <a id="library">Library</a>
+            <a id="aboutMe">About me</a>
+            <a id="contact">contact</a>
         </div>
         <div class="header-button-container">
-            <button class="signup-button">Sign Up</button>
+            <button class="signup-button" id="signupButton">Sign Up</button>
         </div>
     </div>
+    <script src="about-me/about-me.js"></script>
 </body>
 </html>

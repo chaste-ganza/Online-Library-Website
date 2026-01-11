@@ -10,19 +10,25 @@ const starterTextHide = document.getElementById("starterTextHide");
 
 function starterAnimation(){
     setTimeout(() => {
+        starterLogoHide.style.width = "0px";
+    }, 500);
+    setTimeout(() => {
+        starterTextHide.style.width = "0px";
+    }, 700);
+    setTimeout(() => {
         starterLogoHide.style.width = "100px";
-    }, 2000);
+    }, 3000);
     setTimeout(() => {
         starterTextHide.style.width = "207px";
-    }, 2200);
+    }, 3200);
     setTimeout(() =>{
         starterLogo.style.display = "none";
         starterText.style.display = "none";
         starter.style.height = "0vh";
-    },3000);
+    },4000);
     setTimeout(()=>{
         starter.style.display = "none";
-    },3700)
+    },4700)
 }
 
 starterAnimation();
@@ -40,7 +46,7 @@ signupButton.addEventListener("click",()=>{
     change.style.width = "100%";
     setTimeout(()=>{
         window.location.href = "login.html";
-    },300)
+    },1000)
 })
 
 
@@ -54,3 +60,35 @@ function dischangeAnimation(){
 }
 
 dischangeAnimation()
+
+const library = document.getElementById("library")
+
+library.addEventListener("click",()=>{
+    change.style.display="block";
+    change.style.width = "100%";
+    setTimeout(()=>{
+        window.location.href = "library.html";
+    },1000)
+})
+
+const contact = document.getElementById("contact")
+
+contact.addEventListener("click",()=>{
+    change.style.display="block";
+    change.style.width = "100%";
+    setTimeout(()=>{
+        window.location.href = "contact.html";
+    },1000)
+})
+
+
+
+const aboutMe = document.getElementById("aboutMe")
+
+aboutMe.addEventListener("click",()=>{
+    change.style.display = "block"
+    change.style.width = "100%"
+    setTimeout(()=>{
+        window.location.href = "about-me.html"
+    },1000)
+})

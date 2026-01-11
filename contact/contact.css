@@ -1,0 +1,134 @@
+:root {
+  /* Backgrounds */
+  --color-bg: #f7f6ff;
+  --color-surface: #ffffff;
+
+  /* Text */
+  --color-text: #1c1b3a;
+  --color-text-muted: #6b6a8a;
+
+  /* Brand / Actions */
+  --color-primary: #ff3b5c;   /* coral red (CTA) */
+  --color-secondary: #4d96ff; /* bright blue */
+  --color-accent: #facc15;    /* warm yellow */
+
+  /* Decorative */
+  --color-purple: #bf5af2;
+  --color-teal: #2dd4bf;
+  --color-green: #86efac;
+
+  --color-border: #e6e6f5;
+}
+
+
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Segoe UI', 'Open Sans', 'Verdana', sans-serif;
+    background-color: var(--color-bg);
+}
+
+
+
+#change{
+    background-color: var(--color-text);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    transition: 0.4s;
+    display: flex;
+    z-index: 2;
+}
+
+
+
+
+
+
+.header{
+    width: 100%;
+    height: 11vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo-container{
+    height: 40px;
+    padding: 0px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.link-container{
+    display: flex;
+    gap: 3vw;
+}
+
+a {
+  position: relative;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  color: var(--color-text);
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+a:active::after{
+    background-color: var(--color-secondary);
+}
+
+a:hover {
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+.header-button-container{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-button{
+    background-color: var(--color-primary);
+    border-style: none;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    color: var(--color-bg);
+    font-weight: 500;
+    font-size: 12px;
+    transition: 0.4s;
+}
+
+.signup-button:hover{
+    background-color: var(--color-secondary);
+    width: 160px;
+
+}
+
+.signup-button:active{
+    background-color: var(--color-accent);
+}

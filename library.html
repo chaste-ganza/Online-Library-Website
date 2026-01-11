@@ -2,72 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>City Library</title>
-    <link rel="stylesheet" href="library.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly-Library</title>
+    <link rel="stylesheet" href="library/library.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
-    
-    <div class="dischange" id="dischange"></div>
-
-
-    <!-- Navigation -->
-    <header>
-        <h1>City Library</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Books</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h2>Welcome to City Library</h2>
-        <p>Discover knowledge, one book at a time.</p>
-    </section>
-
-    <!-- Books Section -->
-    <section class="books">
-        <h2>Available Books</h2>
-
-        <div class="book-container">
-
-            <div class="book-card">
-                <img src="https://via.placeholder.com/150" alt="Book">
-                <h3>Introduction to Programming</h3>
-                <p>Author: John Doe</p>
-                <button>View Book</button>
-            </div>
-
-            <div class="book-card">
-                <img src="https://via.placeholder.com/150" alt="Book">
-                <h3>Web Design Basics</h3>
-                <p>Author: Jane Smith</p>
-                <button>View Book</button>
-            </div>
-
-            <div class="book-card">
-                <img src="https://via.placeholder.com/150" alt="Book">
-                <h3>Data Structures</h3>
-                <p>Author: Alan Turing</p>
-                <button>View Book</button>
-            </div>
-
-            <div class="book-card">
-                <img src="https://via.placeholder.com/150" alt="Book">
-                <h3>Artificial Intelligence</h3>
-                <p>Author: Andrew Ng</p>
-                <button>View Book</button>
-            </div>
+    <div id="change"></div>
+    <div class="header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Library logo" class="logo" style="height: 100%;">
+        </div>
+        <div class="link-container">
+            <a id="index">Home</a>
+            <a id="library">Library</a>
+            <a id="aboutMe">About me</a>
+            <a id="contact">contact</a>
+            
 
         </div>
-    </section>
+        <div class="header-button-container">
+            <button class="signup-button" id="signupButton">Sign Up</button>
+        </div>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 City Library. All rights reserved.</p>
-    </footer>
+    <!-- ChatGPT codes -->
 
+    <section class="library-controls">
+
+
+    <select id="categoryFilter">
+        <option value="all">All categories</option>
+        <option value="literary-fiction">Literary Fiction</option>
+        <option value="mystery">Mystery</option>
+        <option value="science-fiction">Science Fiction</option>
+        <option value="science-tech">Science & Technology</option>
+        <option value="business">Business</option>
+        <option value="classics">Classics</option>
+    </select>
+
+    <button onclick="sortAZ()">Sort A–Z</button>
+    <button onclick="sortZA()">Sort Z–A</button>
+
+    <input type="text" id="searchInput" placeholder="Search books...">
+
+
+</section>
+
+<!-- Books -->
+<section class="library-section">
+    <div class="books-grid" id="booksGrid">
+        <div class="book-card" data-title="To Kill a Mockingbird" data-category="literary-fiction"><h3>To Kill a Mockingbird</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="The Great Gatsby" data-category="literary-fiction"><h3>The Great Gatsby</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="1984" data-category="literary-fiction"><h3>1984</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="Pride and Prejudice" data-category="literary-fiction"><h3>Pride and Prejudice</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="The Catcher in the Rye" data-category="literary-fiction"><h3>The Catcher in the Rye</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="The Old Man and the Sea" data-category="literary-fiction"><h3>The Old Man and the Sea</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="Beloved" data-category="literary-fiction"><h3>Beloved</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="Jane Eyre" data-category="literary-fiction"><h3>Jane Eyre</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="The Road" data-category="literary-fiction"><h3>The Road</h3><p>Literary Fiction</p></div>
+        <div class="book-card" data-title="A Passage to India" data-category="literary-fiction"><h3>A Passage to India</h3><p>Literary Fiction</p></div>
+
+
+
+        <div class="book-card" data-title="Sherlock Holmes" data-category="mystery"><h3>Sherlock Holmes</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="Gone Girl" data-category="mystery"><h3>Gone Girl</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="The Da Vinci Code" data-category="mystery"><h3>The Da Vinci Code</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="The Girl with the Dragon Tattoo" data-category="mystery"><h3>The Girl with the Dragon Tattoo</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="Big Little Lies" data-category="mystery"><h3>Big Little Lies</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="The Silent Patient" data-category="mystery"><h3>The Silent Patient</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="And Then There Were None" data-category="mystery"><h3>And Then There Were None</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="The Reversal" data-category="mystery"><h3>The Reversal</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="In the Woods" data-category="mystery"><h3>In the Woods</h3><p>Mystery</p></div>
+        <div class="book-card" data-title="The Shadowhunter" data-category="mystery"><h3>The Shadowhunter</h3><p>Mystery</p></div>
+
+
+
+        <div class="book-card" data-title="Dune" data-category="science-fiction"><h3>Dune</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="Foundation" data-category="science-fiction"><h3>Foundation</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="Ender's Game" data-category="science-fiction"><h3>Ender's Game</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="Neuromancer" data-category="science-fiction"><h3>Neuromancer</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="The Time Machine" data-category="science-fiction"><h3>The Time Machine</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="The Martian" data-category="science-fiction"><h3>The Martian</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="Snow Crash" data-category="science-fiction"><h3>Snow Crash</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="Ready Player One" data-category="science-fiction"><h3>Ready Player One</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="I, Robot" data-category="science-fiction"><h3>I, Robot</h3><p>Science Fiction</p></div>
+        <div class="book-card" data-title="Brave New World" data-category="science-fiction"><h3>Brave New World</h3><p>Science Fiction</p></div>
+
+
+        <div class="book-card" data-title="A Brief History of Time" data-category="science-tech"><h3>A Brief History of Time</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="The Selfish Gene" data-category="science-tech"><h3>The Selfish Gene</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="Cosmos" data-category="science-tech"><h3>Cosmos</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="The Innovators" data-category="science-tech"><h3>The Innovators</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="Clean Code" data-category="science-tech"><h3>Clean Code</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="Introduction to Algorithms" data-category="science-tech"><h3>Introduction to Algorithms</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="Artificial Intelligence Basics" data-category="science-tech"><h3>Artificial Intelligence Basics</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="The Code Book" data-category="science-tech"><h3>The Code Book</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="The Future of Humanity" data-category="science-tech"><h3>The Future of Humanity</h3><p>Science & Technology</p></div>
+        <div class="book-card" data-title="Deep Learning Illustrated" data-category="science-tech"><h3>Deep Learning Illustrated</h3><p>Science & Technology</p></div>
+
+
+
+        <div class="book-card" data-title="Rich Dad Poor Dad" data-category="business"><h3>Rich Dad Poor Dad</h3><p>Business</p></div>
+        <div class="book-card" data-title="Think and Grow Rich" data-category="business"><h3>Think and Grow Rich</h3><p>Business</p></div>
+        <div class="book-card" data-title="The Intelligent Investor" data-category="business"><h3>The Intelligent Investor</h3><p>Business</p></div>
+        <div class="book-card" data-title="Zero to One" data-category="business"><h3>Zero to One</h3><p>Business</p></div>
+        <div class="book-card" data-title="The Lean Startup" data-category="business"><h3>The Lean Startup</h3><p>Business</p></div>
+        <div class="book-card" data-title="Good to Great" data-category="business"><h3>Good to Great</h3><p>Business</p></div>
+        <div class="book-card" data-title="Start With Why" data-category="business"><h3>Start With Why</h3><p>Business</p></div>
+        <div class="book-card" data-title="Atomic Habits" data-category="business"><h3>Atomic Habits</h3><p>Business</p></div>
+        <div class="book-card" data-title="The Psychology of Money" data-category="business"><h3>The Psychology of Money</h3><p>Business</p></div>
+        <div class="book-card" data-title="Principles" data-category="business"><h3>Principles</h3><p>Business</p></div>
+
+
+
+        <div class="book-card" data-title="Moby Dick" data-category="classics"><h3>Moby Dick</h3><p>Classics</p></div>
+        <div class="book-card" data-title="War and Peace" data-category="classics"><h3>War and Peace</h3><p>Classics</p></div>
+        <div class="book-card" data-title="Crime and Punishment" data-category="classics"><h3>Crime and Punishment</h3><p>Classics</p></div>
+        <div class="book-card" data-title="Les Misérables" data-category="classics"><h3>Les Misérables</h3><p>Classics</p></div>
+        <div class="book-card" data-title="The Odyssey" data-category="classics"><h3>The Odyssey</h3><p>Classics</p></div>
+        <div class="book-card" data-title="Don Quixote" data-category="classics"><h3>Don Quixote</h3><p>Classics</p></div>
+        <div class="book-card" data-title="The Iliad" data-category="classics"><h3>The Iliad</h3><p>Classics</p></div>
+        <div class="book-card" data-title="Great Expectations" data-category="classics"><h3>Great Expectations</h3><p>Classics</p></div>
+        <div class="book-card" data-title="Dracula" data-category="classics"><h3>Dracula</h3><p>Classics</p></div>
+        <div class="book-card" data-title="Frankenstein" data-category="classics"><h3>Frankenstein</h3><p>Classics</p></div>
+
+
+    </div>
+</section>
+
+
+    <script src="library/library.js"></script>
 </body>
 </html>
