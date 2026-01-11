@@ -11,7 +11,7 @@
 
     <div class="dischange" id="dischange"></div>
 
-    <div class="left-section">
+    <div class="left-section" id="leftSection">
         <div class="back-button-container">
             <button class="back-button" id="backButton">
                 <img src="images/free-arrow-left-icon-3099-thumb.png" alt="" style="width: 30px;">
@@ -22,20 +22,20 @@
     </div>
 
 
-    <div class="right-section">
-        <h1>
-            Registration form
+    <div class="right-section" id="rightSection">
+        <h1 id="title">
+            Login form
         </h1>
-        <form action="#" method="GET">
+        <form action="#" method="GET" id="registrationForm">
             <div style="display: flex; flex-direction: row; gap: 20px;">
                 <div id="loginItems">
                     <label for="fname">First name</label>
-                    <input type="text" name="firstname" id="name" placeholder="First name">
+                    <input type="text" name="firstname" id="name" placeholder="First name" required>
                 </div>
 
                 <div id="loginItems">
                     <label for="lname">Last name</label>
-                    <input type="text" name="lastname" id="name" placeholder="Last name">
+                    <input type="text" name="lastname" id="name" placeholder="Last name" required>
                 </div>
 
             </div>
@@ -44,23 +44,48 @@
 
             <div id="loginItems">
                 <label for="uname">Username</label>
-                <input type="text" name="username" id="name" placeholder="Username">
+                <input type="text" name="username" id="name" placeholder="Username" required>
             </div>
 
             <div id="loginItems">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email" required>
             </div>
 
             <div id="loginItems">
                 <label for="pass">password</label>
-                <input type="password" name="password" id="pass" placeholder="Password">
+                <input type="password" name="password" id="pass" placeholder="Password" required>
             </div>
             
-            <input type="submit" value="login" id="loginButton">
-    </form>
+            <input type="submit" value="Register" id="registerButton" class="submit-button">
+            <p>Already have an account? <span id="goToLogin" style="color: #ff3b5c; text-decoration: underline; cursor: pointer;">Click here to login</span></p>
+        </form>
+
+
+        <form action="#" method="GET" id="loginForm">
+            
+
+            <div id="loginItems">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+
+            <div id="loginItems">
+                <label for="pass">password</label>
+                <input type="password" name="password" id="pass" placeholder="Password" required>
+            </div>
+            
+            <input type="submit" value="Login" id="loginButton" class="submit-button">
+            <p>Don't have an account yet? <span id="goToRegister" style="color: #ff3b5c; text-decoration: underline; cursor:pointer">Click here to Register</span></p>
+        </form>
+
+
+
+
+
     </div>
-    </div>
+
+
     <script src="login.js"></script>
 </body>
 </html>

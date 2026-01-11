@@ -28,10 +28,12 @@ function starterAnimation(){
     },4000);
     setTimeout(()=>{
         starter.style.display = "none";
+        typeText();
     },4700)
 }
 
 starterAnimation();
+
 
 
 
@@ -92,3 +94,23 @@ aboutMe.addEventListener("click",()=>{
         window.location.href = "about-me.html"
     },1000)
 })
+
+
+
+
+
+
+
+
+
+const text = "Welcome to Bookly";
+let index = 0;
+
+function typeText() {
+    if (index < text.length) {
+        document.getElementById("typing").textContent += text.charAt(index);
+        index++;
+        setTimeout(typeText, 100);
+    }
+}
+
