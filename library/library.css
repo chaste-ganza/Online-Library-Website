@@ -226,3 +226,19 @@ a:hover::after {
 .book-image{
     height: 150px;
 }
+
+
+
+.footer {
+    margin-top: 50px;
+    background-color: var(--color-text);
+    padding: 30px 0;
+    text-align: center;
+    color: var(--color-surface);
+}
+
+.footer-content p {
+    margin: 6px 0;
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
