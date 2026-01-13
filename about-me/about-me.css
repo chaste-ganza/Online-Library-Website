@@ -121,16 +121,20 @@ a:hover::after {
     font-weight: 500;
     font-size: 12px;
     transition: 0.4s;
+    box-shadow: 0 0 0 #922234;
+
 }
 
 .signup-button:hover{
-    background-color: var(--color-secondary);
-    width: 160px;
-
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #922234;
 }
 
 .signup-button:active{
+    transition: 0;
     background-color: var(--color-accent);
+    box-shadow: 0 0 0 #80690c;
+    transform: translateY(0);
 }
 
 

@@ -52,6 +52,17 @@ signupButton.addEventListener("click",()=>{
 })
 
 
+const getStartedButton = document.getElementById("getStartedButton");
+
+getStartedButton.addEventListener("click",()=>{
+    change.style.display="block";
+    change.style.width = "100%";
+    setTimeout(()=>{
+        window.location.href = "login.html";
+    },1000)
+})
+
+
 
 const dischange = document.getElementById("dischange")
 
@@ -114,3 +125,24 @@ function typeText() {
     }
 }
 
+
+
+
+const grid = document.querySelector(".grid-bg");
+const cellSize = 20;
+
+function createGrid() {
+  grid.innerHTML = "";
+
+  const cols = Math.ceil(window.innerWidth / cellSize);
+  const rows = Math.ceil(window.innerHeight / cellSize);
+
+  for (let i = 0; i < cols * rows; i++) {
+    const cell = document.createElement("div");
+    cell.className = "grid-cell";
+    grid.appendChild(cell);
+  }
+}
+
+createGrid();
+window.addEventListener("resize", createGrid);

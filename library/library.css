@@ -121,16 +121,20 @@ a:hover::after {
     font-weight: 500;
     font-size: 12px;
     transition: 0.4s;
+    box-shadow: 0 0 0 #922234;
+
 }
 
 .signup-button:hover{
-    background-color: var(--color-secondary);
-    width: 160px;
-
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #922234;
 }
 
 .signup-button:active{
+    transition: 0;
     background-color: var(--color-accent);
+    box-shadow: 0 0 0 #80690c;
+    transform: translateY(0);
 }
 
 
@@ -177,12 +181,22 @@ a:hover::after {
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.2s;
+    box-shadow: 0 0 0 #922234;
 }
 
 .library-controls button:hover {
-    background-color: var(--color-secondary);
+    transform: translateY(-8px);
+    box-shadow: 0 8px 0 #922234;
 }
+
+.library-controls button:active{
+    transition: 0;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 0 #80690c;
+    transform: translateY(0);
+}
+
 
 /* Books */
 .books-grid {

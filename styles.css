@@ -90,6 +90,29 @@ body{
 /**********************************************************************/
 
 
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 20px);
+  grid-auto-rows: 20px;
+  z-index: -100;
+  background-color: #4d96ff10;
+}
+
+.grid-cell {
+  background: #f7f6ff;
+  border: 0.1px solid #4d96ff10;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 0 0 #9d9d9d;
+  transition: 0.1s;
+}
+
+
+
+/***********************************************************************/
+
 
 .header{
     width: 100%;
@@ -165,16 +188,20 @@ a:hover::after {
     font-weight: 500;
     font-size: 12px;
     transition: 0.4s;
+    box-shadow: 0 0 0 #922234;
+
 }
 
 .signup-button:hover{
-    background-color: var(--color-secondary);
-    width: 160px;
-
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #922234;
 }
 
 .signup-button:active{
+    transition: 0;
     background-color: var(--color-accent);
+    box-shadow: 0 0 0 #80690c;
+    transform: translateY(0);
 }
 
 .hero{
@@ -256,16 +283,20 @@ input:focus{
     color: var(--color-bg);
     font-size: 12px;
     transition: 0.3s;
+    box-shadow: 0 0 0 #922234;
+
 }
 
 .bottom-button:hover{
-    width: 160px;
-    background-color: var(--color-secondary);
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 #922234;
 }
 
 .bottom-button:active{
     transition: 0;
     background-color: var(--color-accent);
+    box-shadow: 0 0 0 #80690c;
+    transform: translateY(0);
 }
 
 .typing{
