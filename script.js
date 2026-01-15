@@ -11,25 +11,25 @@ const starterTextHide = document.getElementById("starterTextHide");
 function starterAnimation(){
     setTimeout(() => {
         starterLogoHide.style.width = "0px";
-    }, 300);
+    }, 100);
     setTimeout(() => {
         starterTextHide.style.width = "0px";
-    }, 500);
+    }, 200);
     setTimeout(() => {
         starterLogoHide.style.width = "100px";
-    }, 2800);
+    }, 2000);
     setTimeout(() => {
         starterTextHide.style.width = "207px";
-    }, 3000);
+    }, 2200);
     setTimeout(() =>{
         starterLogo.style.display = "none";
         starterText.style.display = "none";
         starter.style.height = "0vh";
-    },3800);
+    },3000);
     setTimeout(()=>{
         starter.style.display = "none";
         typeText();
-    },4500)
+    },3600)
 }
 
 starterAnimation();
