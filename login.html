@@ -58,6 +58,8 @@
             </div>
             
             <input type="submit" value="Register" id="registerButton" class="submit-button">
+            <input type="reset">
+
             <p>Already have an account? <span id="goToLogin" style="color: #ff3b5c; text-decoration: underline; cursor: pointer;">Click here to login</span></p>
         </form>
 
@@ -72,10 +74,11 @@
 
             <div id="ginItems">
                 <label for="pass">password</label>
-                <input type="password" name="password" id="password" placeholder="Password" required>
+                <input type="password" name="password" id="password" placeholder="Password" required pattern="[a-z]{8}s">
             </div>
-            
+            <input type="file" name="profile-picture" enctype="multipart/form-data">
             <input type="submit" value="Login" id="loginButton" class="submit-button">
+            <input type="reset">
             <p>Don't have an account yet? <span id="goToRegister" style="color: #ff3b5c; text-decoration: underline; cursor:pointer">Click here to Register</span></p>
         </form>
 
