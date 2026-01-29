@@ -6,7 +6,9 @@ function dischangeAnimation(){
     }, 1);
 }
 
-dischangeAnimation()
+window.addEventListener("load", () => {
+    dischangeAnimation();
+});
 
 
 const signupButton = document.getElementById("signupButton")
@@ -62,5 +64,15 @@ aboutMe.addEventListener("click",()=>{
     change.style.width = "100%"
     setTimeout(()=>{
         window.location.href = "about-me.html"
+    },1000)
+})
+
+const ctaButton = document.getElementById("ctaButton");
+
+ctaButton.addEventListener("click",()=>{
+    change.style.display="block";
+    change.style.width = "100%";
+    setTimeout(()=>{
+        window.location.href = "library.html";
     },1000)
 })

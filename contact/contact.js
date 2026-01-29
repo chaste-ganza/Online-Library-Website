@@ -6,7 +6,9 @@ function dischangeAnimation(){
     }, 1);
 }
 
-dischangeAnimation()
+window.addEventListener("load", () => {
+    dischangeAnimation();
+});
 
 
 const signupButton = document.getElementById("signupButton")

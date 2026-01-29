@@ -32,8 +32,10 @@ function starterAnimation(){
     },3600)
 }
 
-starterAnimation();
 
+window.addEventListener("load", () => {
+    starterAnimation();
+});
 
 
 

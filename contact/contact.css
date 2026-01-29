@@ -238,6 +238,7 @@ a:hover::after {
     padding: 12px;
     font-size: 14px;
     outline: none;
+    transition: 0.3s;
 }
 
 .contact-form input:focus,

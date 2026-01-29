@@ -6,7 +6,9 @@ function dischangeAnimation(){
     }, 1);
 }
 
-dischangeAnimation()
+window.addEventListener("load", () => {
+    dischangeAnimation();
+});
 
 
 const signupButton = document.getElementById("signupButton")
@@ -116,3 +118,43 @@ categoryFilter.addEventListener("change", () => {
         }
     });
 });
+
+
+
+
+const modal = document.getElementById("bookModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+const modalImage = document.getElementById("modalImage");
+const closeModal = document.getElementById("closeModal");
+
+const books = document.querySelectorAll(".book-card");
+
+books.forEach(book => {
+    book.addEventListener("click", () => {
+        const title = book.getAttribute("data-title");
+        const category = book.getAttribute("data-category");
+        const descAttr = book.getAttribute("data-desc") || `Category: ${category}. A brief description of "${title}".`;
+        const imgSrc = book.querySelector("img").src;
+
+        modalTitle.textContent = title;
+        modalDesc.textContent = descAttr;
+        modalImage.src = imgSrc;
+        modalImage.alt = title;
+
+        modal.classList.add("show"); // triggers transition
+    });
+});
+
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("show");
+    }
+});
+
+
+

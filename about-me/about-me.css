@@ -210,6 +210,7 @@ a:hover::after {
     color: var(--color-text);
     border-radius: 10px;
     transition: 0.2s;
+    box-shadow: 0 0 0 #2a5591;
 }
 
 .second-text-container:hover{
@@ -243,6 +244,7 @@ a:hover::after {
 .my-image{
     margin-top: 250px;
     width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: var(--color-accent) 5px solid;
     animation: float2 3s ease-in-out infinite;
@@ -300,6 +302,8 @@ a:hover::after {
     padding:0 30px;
     background-color: var(--color-bg);
     transition: 0.2s;
+    box-shadow: 0 0 0 #aa8b10;
+
 }
 
 .our-mission-container:hover{
@@ -309,7 +313,7 @@ a:hover::after {
 
 .our-mission-container:active{
     transform: translateY(0);
-    box-shadow: 0 0 0;
+    box-shadow: 0 0 0 #aa8b10;
 }
 
 
@@ -335,6 +339,8 @@ a:hover::after {
     border-radius: 20px;
     margin: 80px 30px 30px 30px;
     transition: 0.3s;
+        box-shadow: 0 0 0 #731b2a;
+
 }
 
 .left-fourth:hover{
@@ -344,7 +350,7 @@ a:hover::after {
 
 .left-fourth:active{
     transform:  translateY(0);
-    box-shadow: 0 0 0;
+    box-shadow: 0 0 0 #731b2a;
 }
 
 
@@ -402,6 +408,8 @@ a:hover::after {
     border-radius: 16px;
     border: 2px solid var(--color-secondary);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 #2a5591;
+
 }
 
 .value-card h3 {
@@ -416,7 +424,7 @@ a:hover::after {
 
 .value-card:hover {
     transform: translateY(-12px);
-    box-shadow: 0 16px 0 #2a5591;
+    box-shadow: 0 12px 0 #2a5591;
 }
 
 
@@ -454,6 +462,8 @@ a:hover::after {
     border-radius: 20px;
     border: 2px solid var(--color-accent);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 #aa8b10;
+
 }
 
 .team-card img {
@@ -480,7 +490,7 @@ a:hover::after {
 
 .team-card:active{
     transform: translateY(0);
-    box-shadow: 0 0 0;
+    box-shadow: 0 0 0 #aa8b10;
 }
 
 

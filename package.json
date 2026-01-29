@@ -1,0 +1,21 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "Hey, this is a note to give you a notion about this repository\r Our WebUser interface teacher gave us an assignment to make a website and apply most of the things we've learned in WUI\r So, I decided to make an online library for books\r It is just a mock, it doesn't have proper backend, authentication system and database with books and other info\r It was just created to apply skills of html, css and DOM js I've learned past the first semester at Rwanda Coding Academy",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaste-ganza/Online-Library-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chaste-ganza/Online-Library-Website/issues"
+  },
+  "homepage": "https://github.com/chaste-ganza/Online-Library-Website#readme"
+}

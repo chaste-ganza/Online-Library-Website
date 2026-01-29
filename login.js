@@ -6,7 +6,10 @@ function dischangeAnimation(){
     }, 1);
 }
 
-dischangeAnimation()
+
+window.addEventListener("load", () => {
+    dischangeAnimation();
+});
 
 
 const backButton = document.getElementById("backButton")

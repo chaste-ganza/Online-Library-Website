@@ -94,9 +94,6 @@ input:focus{
 }
 
 
-label{
-    font-size: 13px;
-}
 
 #loginItems{
     display: flex;
@@ -106,6 +103,8 @@ label{
 label{
     text-align: left;
     width: 100%;
+    font-size: 13px;
+    padding: 10px 0 0 0;
 }
 .submit-button{
     justify-content: center;
@@ -181,3 +180,4 @@ form{
 a{
     color: var(--color-primary);
 }
+
